@@ -2,11 +2,13 @@
 package config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import beans.Parrot;
 
 @Configuration
+@ComponentScan("beans")
 public class ProjectConfig {
 	@Bean
 	Parrot parrot1() {
